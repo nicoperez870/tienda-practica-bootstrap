@@ -16,25 +16,51 @@
 <!-- header --> 
 	<header class="header" >
 	
-<!-- Listas linkeadas --> 	
 		<div class="header__logo">
 			<img class="header__icono" src="../assets/img/Icono ciervo.png" alt="icono">
 			<h1 class=header__titulo >Patagonia Gourmet Club</h1>
 		</div>
-		<nav class="nav">
-			<ul class="listas">
-				<li class="nav__menu"><a href="../index.html">Home</a></li>
-				<li  class="nav__menu"><a href="../Paginas/club.html">Club</a></li>
-				<li class="nav__menu"><a href="../Paginas/tienda.html">Tienda</a></li>
-				<li class="nav__menu"><a href="../Paginas/nosotros.html">Nosotros</a></li>
-				<li class="nav__menu"><a href="../Paginas/Contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+
+
+<!-- Listas linkeadas --> 	
+
+		<div class="container d-flex justify-content-end">
+		
+			<nav class="navbar navbar-expand-lg navbar-light ">
+			  <div class="container-fluid">
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					  <a id="colorlist" class="nav-link active" aria-current="page" href="../index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a id="colorlist" class="nav-link" href="./club.html">Club</a>
+					</li>
+					<li class="nav-item">
+						<a id="colorlist" class="nav-link" href="./tienda.html"">Tienda</a>
+					  </li>
+					<li class="nav-item">
+						<a id="colorlist" class="nav-link" href="./nosotros.html">Nosotros</a>
+					  </li>
+				  </ul>
+				  <form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Buscar</button>
+				  </form>
+				</div>
+			  </div>
+			</nav>
+				</div>
+				</div>
 		
 	</header>	
 
 <!-- productos-->
-	<main class="main">
+	<main class="container" id="main">
 		
 <!-- Vinos --> 
 		<h3 class="main__titulosTienda">VINOS</h3>
