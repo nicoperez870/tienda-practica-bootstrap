@@ -1,0 +1,322 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Estonia', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+
+/*Mobile*/
+
+
+@media (min-width:360px)  {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "header" 
+        "filtros" 
+        "main" 
+        "main"
+        "main"
+        "imagenDecorativa" 
+        "footer";  
+    grid-template-columns: auto ;
+    grid-template-rows: 200px 150px 1fr 1fr 1fr 100px 110px;
+    
+    }
+
+    /*Header*/
+
+    .header {
+        display: flex;
+        font-size: 15px;
+        color: white;
+        border-bottom: 2px solid grey 
+    }
+        
+    .header__icono {width: 100px}
+
+    
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav__menu {   
+        list-style-type: none;
+       }
+
+    .nav__menu a {   
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;    
+    }
+
+
+
+    /*Main*/
+
+
+    .main   {
+        border-bottom: 2px solid grey
+    }
+
+    .imagenesTienda {
+        height: 100px;
+        border-radius: 10px;
+        border-style:groove;
+        }
+    .imagenesTienda:hover {
+        height: 110px ;
+    } 
+
+    .imagenDecorativa { 
+        width: 300px;
+        border-bottom: 2px solid grey
+        }
+    
+    .main__titulosTienda {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    
+    
+    .main__vinos {
+        
+        height: 250px;
+      
+
+            }
+
+    .main__spirits  {
+       
+        height: 150px;
+    }
+
+    .main__gourmet {
+      
+      
+        height: 250px;
+    }
+
+
+
+    /*Footer*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer__img {
+        width: 30px;
+    }
+
+    /*Grid Areas*/
+
+    header {
+        grid-area: header;
+        background-color: maroon;
+    }
+    
+    footer {
+        grid-area: footer;
+        background-color: maroon;
+    }
+    
+    section#imagenDecorativa {
+        grid-area: imagenDecorativa;
+        
+        ;
+    
+    }
+    
+    section#filtros {
+        grid-area: filtros;
+        background-color: gray
+        ;
+    
+    }
+    
+    main {
+        grid-area: main;
+        background-color: ;
+    }
+    
+
+} /*llave escencial - cierre mobile*/
+
+
+
+    
+
+
+/*------------------Desktop----------------*/
+
+
+@media (min-width:1200px)  {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "header header header" 
+        "filtros main imagenDecorativa" 
+        "filtros main imagenDecorativa"
+        "filtros main imagenDecorativa"
+        "footer footer footer";  
+    grid-template-columns: 150px auto 250px ;
+    grid-template-rows: 170px auto auto auto 150px ; 
+    }
+
+    /*Header*/
+
+    .header {
+        display: flex;
+        font-size: 15px;
+        color: white;
+        border-bottom: 2px solid grey 
+    }
+        
+    .header__icono {width: 100px}
+
+    .header__logo {
+        width: 700px;
+    }
+
+    .header__titulo {
+        font-size: 40px;
+    } 
+
+    .imagenDecorativa { 
+        width: 300px;
+        border-bottom: 2px solid grey;
+        }
+
+    
+
+    .listas {
+        width: 600px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        text-decoration: none;
+      
+        
+    }
+
+    .nav__menu a {   
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+
+
+    }
+
+
+
+    /*Main*/
+
+
+    .main   {
+        border-bottom: 2px solid grey
+    }
+
+    .imagenesTienda {
+        height: 100px;
+        border-radius: 10px;
+        border-style:groove;
+        }
+    .imagenesTienda:hover {
+        height: 130px ;
+    } 
+
+    .main__titulosTienda {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    
+    .main__vinos {
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+        align-content: flex-end ;
+
+            }
+
+    .main__spirits  {
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+    }
+
+    .main__gourmet {
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+    }
+
+
+
+
+    /*Footer*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer__img {
+        width: 40px;
+    }
+
+
+   /*Grid Areas*/
+
+   header {
+    grid-area: header;
+    background-color: maroon;
+}
+
+footer {
+    grid-area: footer;
+    background-color: maroon;
+}
+
+section#imagenDecorativa {
+    grid-area: imagenDecorativa;
+    background-color: red
+    
+    ;
+
+}
+
+section#filtros {
+    grid-area: filtros;
+    background-color: gray
+    ;
+
+}
+
+main {
+    grid-area: main;
+    background-color: ;
+}
+
+} /*cierre llave desktop*/
+
+
+
+
+
+
+

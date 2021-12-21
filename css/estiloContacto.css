@@ -1,0 +1,189 @@
+/*reseteo css*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+/* Mobile*/
+
+@media (min-width:360px)  {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+        
+
+/* Diseño Header*/
+
+.body__header {
+    display: flex;
+    background-color: maroon;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    position: sticky;
+    top: 0;
+    align-items: flex-end;
+
+}
+
+.body__icono {
+    padding: 10px;
+}
+
+.header__icono { 
+    width: 80px;
+
+}
+
+.nav {
+    width: 40%;
+  
+}
+    
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px;
+    justify-items: end;
+  }
+
+.nav__menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__oculto {
+    position: absolute;
+    display: none;
+}
+
+/* Main */
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#mainSection {
+    display: grid;
+}
+
+.imgTexto {
+    display: none;
+}
+
+
+
+/*Footer*/
+
+.footer {
+    background-color: maroon;
+    color: white;
+}
+
+.imgFooter {
+    display: flex;
+    width: 40px;
+    flex-direction: column;
+}
+
+}
+
+
+
+/* Desktop*/
+
+
+@media (min-width:1200px){  
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+        
+
+
+/* Diseño Header*/
+
+.body__header {
+    display: flex;
+    background-color: maroon;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    position: relative;
+   
+    top: 0;
+    align-items: flex-end;
+
+}
+
+.body__icono {
+    padding: 10px;
+}
+
+.header__icono { 
+    width: 80px;
+
+}
+
+.nav {
+    width: 40%;
+  
+}
+    
+.nav__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px;
+
+    justify-content: space-around;
+  }
+
+.nav__menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__oculto {
+    position: absolute;
+    display: none;
+}
+
+/* Main */
+
+
+
+.texto {
+    display: flex;
+    align-items: center;
+    width: ;
+}
+.texto__cuerpo {
+    width: 300px;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: maroon;
+    color: white;
+}
+
+.imgFooter {
+    display: flex;
+    width: 60px;
+    flex-direction: column;
+}
+}
